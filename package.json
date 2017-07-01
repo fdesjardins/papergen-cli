@@ -1,6 +1,6 @@
 {
   "name": "papergen-cli",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Companion CLI for papergen package",
   "main": "index.js",
   "scripts": {
