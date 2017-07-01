@@ -1,0 +1,52 @@
+{
+  "name": "papergen-cli",
+  "version": "0.0.0",
+  "description": "Companion CLI for papergen package",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint *.js && nyc ./node_modules/.bin/mocha --opts mocha.opts test.js"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Forrest Desjardins",
+    "email": "desjardinsfg@gmail.com",
+    "url": "github.com/fdesjardins"
+  },
+  "engines": {
+    "node": ">=7"
+  },
+  "keywords": [
+    "paper",
+    "pages",
+    "notebook",
+    "stationery",
+    "printing",
+    "loose leaf",
+    "generator",
+    "maker",
+    "creator",
+    "printer",
+    "designer"
+  ],
+  "dependencies": {
+    "papergen": "0.0.2",
+    "yargs": "^8.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "eslint": "^4.1.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  }
+}
